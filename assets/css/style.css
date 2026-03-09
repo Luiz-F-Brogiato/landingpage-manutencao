@@ -1,0 +1,75 @@
+:root {
+  --cor-primaria: #ff6600;   /* energia / ação */
+  --cor-secundaria: #222222; /* profissional */
+  --cor-destaque: #25D366;   /* WhatsApp */
+  --cor-fundo: #f8f9fa;
+  --btn-normal: #489118;
+  --btn-active: #1e3c0a;
+  --btn-normal-text: white;
+
+
+}
+
+.hero {
+  position: relative;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 5%,
+    rgba(0, 0, 0, 0) 100%
+  ), url('/assets/img/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.info {
+  background-color: #f19614;
+
+}
+
+i > img {
+  width: 28px;
+}
+
+.info > div p::before {
+  content: "✅ ";  /* Tool emoji */
+  font-size: 1.2em;
+}
+
+.hero-container > btn {
+  background-color: var(--btn-normal);
+  color: var(--btn-normal-text);
+}
+
+.hero-container > btn:hover {
+  background-color: var(--btn-active);
+  color: var(--btn-normal-text);
+  font-weight: 600;
+}
+
+.info div > btn {
+  background-color: var(--btn-normal);
+  color: var(--btn-normal-text);
+}
+
+.info div > btn:hover {
+  background-color: var(--btn-active);
+  color: var(--btn-normal-text);
+  font-weight: 600;
+}
+
+.confirm {
+  background-color: #1c2048;
+}
+
+.confirm h3 {
+  color: white;
+}
+
+.confirm h3::before {
+  content: url(/assets/img/check-mark-svgrepo-com.svg);
+}
+
+.button > button{
+  width: min-content;
+}
