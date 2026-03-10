@@ -36,23 +36,61 @@ i > img {
   font-size: 1.2em;
 }
 
-.hero-container > btn {
+.btn,
+button,
+input[type="button"],
+input[type="submit"],
+.hero-container > btn,
+.info div > btn,
+btn,
+a.btn {
   background-color: var(--btn-normal);
   color: var(--btn-normal-text);
+  border: none;
 }
 
-.hero-container > btn:hover {
+.btn:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+.hero-container > btn:hover,
+.info div > btn:hover,
+btn:hover,
+a.btn:hover {
   background-color: var(--btn-active);
   color: var(--btn-normal-text);
   font-weight: 600;
 }
 
-.info div > btn {
+/* Focus: remove outline and make any <i> children transparent */
+.btn:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+.hero-container > btn:focus,
+.info div > btn:focus,
+btn:focus,
+a.btn:focus {
+  outline: none;
+}
+
+.btn:focus i,
+button:focus i,
+input[type="button"]:focus i,
+input[type="submit"]:focus i,
+.hero-container > btn:focus i,
+.info div > btn:focus i,
+btn:focus i,
+a.btn:focus i {
+  opacity: 0;
+}
+
+#why{
   background-color: var(--btn-normal);
   color: var(--btn-normal-text);
 }
 
-.info div > btn:hover {
+#why:hover {
   background-color: var(--btn-active);
   color: var(--btn-normal-text);
   font-weight: 600;
@@ -62,14 +100,13 @@ i > img {
   background-color: #1c2048;
 }
 
+.last {
+  background-color: #1c2048;
+}
 .confirm h3 {
   color: white;
 }
 
 .confirm h3::before {
   content: url(/assets/img/check-mark-svgrepo-com.svg);
-}
-
-.button > button{
-  width: min-content;
 }
